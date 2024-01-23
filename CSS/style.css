@@ -1,15 +1,33 @@
-/* GLOBAL RESET */
+ GLOBAL RESET 
 * { box-sizing: border-box; }
 body { margin: 0; }
 
-/* GLOBAL COLORS */
+ GLOBAL COLORS
 body { color: rgba(0, 0, 0, 0.8); }
 a { color: rgba(0, 102, 204, 1); }
 a:hover { color: rgba(0, 51, 153, 1); }
 
-/* GLOBAL TYPOGRAPHY */
+GLOBAL TYPOGRAPHY
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 88.75%; /* 14px */
   line-height: 1.4;
+}
+HEADER
+header {
+  background-color: rgba(0, 102, 204, 1);
+  color: rgba(0, 0, 0, 0.8); 
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+header a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: rgba(255, 255, 255, 1);
 }
