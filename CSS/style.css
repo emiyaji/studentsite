@@ -1,23 +1,15 @@
+/* GLOBAL RESET */
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+/* GLOBAL COLORS */
+body { color: rgba(0, 0, 0, 0.8); }
+a { color: rgba(0, 102, 204, 1); }
+a:hover { color: rgba(0, 51, 153, 1); }
+
+/* GLOBAL TYPOGRAPHY */
 body {
-    background: rgb(209,242,232);
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif
-    display: grid;
-    align-content: center;
-    text-align: center;
-    min-height: 100vh;
-}
-
-h1{
-    font-family: Arial, Helvetica, sans-serif
-    font-size: 48px;
-}
-
-ul {
-    display: table;
-    max-width: 600px;
-    text-align: left;
-    margin: auto;
-
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 88.75%; /* 14px */
+  line-height: 1.4;
 }
