@@ -52,6 +52,43 @@ header a:hover {
 main {
   background: rgba(0,0,0,.05);
 }
+
+/* HERO SECTION */
+.hero {
+  background-color: rgba(209, 242, 232, 1);
+  text-align: center;
+  color: rgba(107, 0, 87, 0.8)e;
+  padding: 6em 1em;
+}
+
+.hero h2 {
+  font-size: 6em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: rgba(107, 0, 87, 0.8)e;
+  margin: 0 auto;
+}
+
+.hero p {
+  max-width: 30em;
+  margin: 1em auto;
+}
+/* COURSES SECTION */
+.courses {
+  padding: 6em 1em;
+  display: grid;
+  justify-content: center;
+}
+
+.courses ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.courses h3 {
+  text-align: center;
+}
 /* FOOTER */
 footer {
   border-top: 1px solid rgba(0,0,0,.05);
