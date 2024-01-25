@@ -73,6 +73,12 @@ main {
   max-width: 30em;
   margin: 1em auto;
 }
+/* SUB PAGES */
+.page-sub .hero {
+  background-color:rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.8);
+}
+
 /* COURSES SECTION */
 .courses {
   padding: 6em 1em;
