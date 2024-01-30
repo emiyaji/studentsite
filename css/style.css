@@ -15,7 +15,7 @@ body {
 }
 /* HEADER */
 header {
-  background-color: rgba(209, 242, 232, 1);
+  background-color: rgb(74, 128, 112);
   color: rgba(0, 0, 0, 0.8); 
   padding: 1em;
   display: grid;
