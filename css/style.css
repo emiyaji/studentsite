@@ -89,7 +89,7 @@ main {
   flex-wrap: wrap;
 }
 /* COURSES SECTION */
-.courses {
+.Courses {
   padding: 6em 1em;
   display: grid;
   justify-content: center;
@@ -101,7 +101,7 @@ main {
   list-style: none;
 }
 
-.courses h3 {
+.Courses h3 {
   text-align: center;
 }
 /* FOOTER */
