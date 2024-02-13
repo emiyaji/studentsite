@@ -92,7 +92,7 @@ main {
   flex-wrap: wrap;
 }
 /* COURSES SECTION */
-.Courses {
+.courses {
   padding: 6em 1em;
   display: grid;
   justify-content: center;
