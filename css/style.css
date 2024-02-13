@@ -154,6 +154,50 @@ aside {
   }
 }
 
+/* HOME PAGE ONLY */
+.page-home footer {
+  margin-bottom: 15em;
+}
+
+/* SUB PAGES */
+.page-sub .hero {
+  background-color:rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* COURSE PAGES WITH MULTIPLE PROJECT LISTS */
+.coursework {
+  padding: 3em 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  margin: 2em;
+}
+
+/* CODE BLOCKS */
+
+pre code {
+  width: 100%;
+  display: block;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 1em 3em;
+  margin-bottom: 1em;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.markup-box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 1em 3em;
+  margin-bottom: 1em;
+}
+
 /* FOR DEV PURPOSES */
 /* body * {
     background-color: rgba(0,0,0,.05) !important;
