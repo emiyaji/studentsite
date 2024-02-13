@@ -125,3 +125,21 @@ button:hover {
     color: rgba(255,255,255,1);
     background-color: rgba(0, 0, 51, 1);
 }
+
+/* HELPER CLASSES */
+.text-centered {
+    text-align: center;
+}
+.full-width {
+    max-width: none;
+    width: 100%;
+}
+.horiz-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* IMAGES */
+img{
+    max-width: 100%;
+    height: auto;
+}
