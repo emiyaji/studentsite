@@ -1,0 +1,146 @@
+/* ----------------------
+CSS TABLE OF CONTENTS 
+
+# BASE CONTENT (GLOBALS)
+    # RESET
+    # COLORS
+    # TYPOGRAPHY
+        # BODY
+        # HEADINGS
+        # PARAGRAPHS
+        # LINKS
+        # LISTS
+        # BLOCK QUOTES
+        # HELPERS
+    # MEDIA
+        # IMAGES (Responsive)
+    # COMPONENTS/UI ELEMENTS
+        # BUTTONS
+# BASE LAYOUT
+    # CONTANER
+    # MEDIA QUERIES
+    # GRID SYSTEM
+# SITE STRUCTURE
+    # SITE HEADER
+        # SITE ID
+    # SITE MAIN
+    # SITE FOOTER
+    # SITE NAVIGATION
+        # TOGGLE NAV
+    # SECTIONS
+    # SUB PAGES
+
+--------------------- */
+
+/* GLOBAL RESETS */
+body { margin: 0; }
+* { box-sizing: border-box; }
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 87.5%; /* 14px */ 
+    line-height: 1.5;
+    color: rgba(0, 0, 0, .8);
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+    margin: .5em 0;
+}
+
+h1 {
+    font-size: 3em; /* 48px based on a 16px em */
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.25em; /* 36px based on a 16px em */
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.5em; /* 24px based on a 16px em */
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 1.3125em; /* 21px based on a 16px em */
+    line-height: 1.3;
+}
+
+h5 {
+    font-size: 1.125em; /* 18px based on a 16px em */
+}
+
+h6 {
+    font-size: 1em; /* 16px based on a 16px em */
+}
+
+/* PARAGRAPHS */
+p {
+    margin: .5em 0;
+    max-width: 35em;
+}
+
+/* LINKS */
+a {
+    color: rgba(81, 1, 103, 0.7);
+    text-decoration: none;
+}
+a:hover {
+    color: rgba(81, 1, 103, 1);
+    text-decoration: underline;
+}
+
+/* BUTTONS */
+.button,
+button {
+    font-size: 1em;
+    display: inline-block;
+    background-color: rgb(232, 156, 238);
+    color: rgb(34, 3, 36);
+    padding: 1em 1.5em;
+    margin: .5em;
+    border-radius: .5em;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 1;
+    text-align: center;
+}
+.button:hover,
+button:hover {
+    color: rgba(255,255,255,1);
+    background-color: rgb(50, 3, 47);
+    text-decoration: none;
+}
+
+.button.alt {
+    background-color: transparent;
+    color: rgba(50, 3, 47);
+    border: 1px solid rgba(50, 3, 47);
+}
+
+.button.alt:hover {
+    color: rgba(255,255,255,1);
+    background-color: rgba(34, 3, 36);
+}
+
+/* HELPER CLASSES */
+.text-centered {
+    text-align: center;
+}
+.full-width {
+    max-width: none;
+    width: 100%;
+}
+.horiz-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* IMAGES */
+img{
+    max-width: 100%;
+    height: auto;
+}
