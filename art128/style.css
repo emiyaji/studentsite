@@ -14,6 +14,12 @@ body {
   line-height: 1.4;
 }
 
+/* GLOBAL MEDIA */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
 /* SITE STRUCTURE */
 
 /* HEADER */
@@ -34,10 +40,12 @@ header a {
 header a:hover {
   color: rgba(255, 255, 255, 1);
 }
+
 /* SITE ID  */
 .site-id h1 {
   margin: 0;
 }
+
 /* SITE NAV  */
 .site-nav ul {
   display: flex;
@@ -51,6 +59,29 @@ header a:hover {
   display: block;
   padding: 1em;
 }
+
+/* ADD PULL DOWNS */
+
+.site-nav ul li {
+  position: relative;
+}
+.site-nav ul li ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+.site-nav ul li:hover ul {
+  height: auto;
+  overflow: visible;
+  padding-top: 3em;
+}
+.site-nav ul li ul li {
+  min-width: 100px;
+}
+
 /* MAIN */
 main {
   background: rgba(0,0,0,.05);
@@ -64,6 +95,7 @@ main {
   padding: 6em 1em;
 }
 
+.hero h1,
 .hero h2 {
   font-size: 6em;
   line-height: 1;
@@ -76,6 +108,7 @@ main {
   max-width: 30em;
   margin: 1em auto;
 }
+
 /* SUB PAGES */
 .page-sub .hero {
   background-color:rgba(209, 242, 232, 1);
