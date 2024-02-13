@@ -102,6 +102,7 @@ button {
     background-color: rgb(232, 156, 238);
     color: rgb(34, 3, 36);
     padding: 1em 1.5em;
+    margin: .5em;
     border-radius: .5em;
     text-transform: uppercase;
     letter-spacing: .05em;
@@ -111,19 +112,19 @@ button {
 .button:hover,
 button:hover {
     color: rgba(255,255,255,1);
-    background-color: rgba(0, 0, 51, 1);
+    background-color: rgb(50, 3, 47);
     text-decoration: none;
 }
 
 .button.alt {
     background-color: transparent;
-    color: rgba(0, 51, 102, 1);
-    border: 1px solid rgba(0, 51, 102, 1);
+    color: rgba(50, 3, 47);
+    border: 1px solid rgba(50, 3, 47);
 }
 
 .button.alt:hover {
     color: rgba(255,255,255,1);
-    background-color: rgba(0, 0, 51, 1);
+    background-color: rgba(34, 3, 36);
 }
 
 /* HELPER CLASSES */
