@@ -125,4 +125,103 @@ p {
   
   a:hover {
     color: #003;
+  }/* #BLOCK QUOTES  */
+blockquote {
+    font-size: 1.142em;
+    margin: 1.5em 0;
+    padding: 1.5em;
+    border-top: 0px solid #ccc;
+    border-bottom: 0px solid #ccc;
   }
+  
+  blockquote cite {
+    display: block;
+    opacity: 0.8;
+    font-size: 0.875em;
+  }
+  
+  blockquote cite:before {
+    content: "—";
+    margin-right: 0.25em;
+  }
+  
+  /* #HELPERS */
+  .text-centered {
+    text-align: center;
+  }
+  
+  .full-width {
+    max-width: none;
+    width: 100%;
+  }
+  
+  .horiz-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  .subheader {
+    color: #999;
+    margin-top: 1em;
+    font-style: normal;
+    font-weight: normal;
+    clear: both;
+  }
+  
+  /* HORIZONTAL RULES */
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 2em 0;
+  }
+  
+  /* #MEDIA  */
+  /* #IMAGES */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* #COMPONENTS  */
+  /* #BUTTONS */
+  button {
+    font-size: inherit;
+  }
+  
+  button,
+  a.button {
+    display: inline-block;
+    background-color: #036;
+    border: 1px solid #036;
+    color: #fff;
+    padding: 0.75em 1em;
+    border-radius: 0.32em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+  }
+  
+  button.alt,
+  a.button.alt {
+    background-color: transparent;
+    border: 1px solid #036;
+    color: #036;
+  }
+  
+  button:hover,
+  a.button:hover {
+    background-color: #003;
+    color: #fff;
+    border-color: #003;
+    text-decoration: none;
+  }
+  
