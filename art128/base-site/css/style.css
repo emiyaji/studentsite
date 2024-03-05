@@ -1,0 +1,257 @@
+/* ----------------------
+CSS TABLE OF CONTENTS 
+
+# BASE CONTENT (GLOBALS)
+    # RESET
+    # COLORS
+    # TYPOGRAPHY
+        # BODY
+        # HEADINGS
+        # PARAGRAPHS
+        # LINKS
+        # LISTS
+        # BLOCK QUOTES
+        # HELPERS
+    # MEDIA
+        # IMAGES (Responsive)
+    # COMPONENTS/UI ELEMENTS
+        # BUTTONS
+# BASE LAYOUT
+    # CONTANER
+    # MEDIA QUERIES
+    # GRID SYSTEM
+# SITE STRUCTURE
+    # SITE HEADER
+        # SITE ID
+    # SITE MAIN
+    # SITE FOOTER
+    # SITE NAVIGATION
+        # TOGGLE NAV
+    # SECTIONS
+    # SUB PAGES
+
+--------------------- */
+
+/* GLOBAL RESETS */
+body { margin: 0; }
+* { box-sizing: border-box; }
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 100%; /* This sets the value of 1em */ 
+    line-height: 1.4;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+    margin: .5em 0;
+}
+
+h1 {
+    font-size: 3em; /* 48px based on a 16px em */
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.25em; /* 36px based on a 16px em */
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.5em; /* 24px based on a 16px em */
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 1.3125em; /* 21px based on a 16px em */
+    line-height: 1.3;
+}
+
+h5 {
+    font-size: 1.125em; /* 18px based on a 16px em */
+}
+
+h6 {
+    font-size: 1em; /* 16px based on a 16px em */
+}
+
+/* PARAGRAPHS */
+p {
+    max-width: 35em;
+}
+
+/* LINKS */
+a {
+    color: rgba(0, 51, 102, 1);
+    text-decoration: none;
+}
+a:hover {
+    color: rgba(0, 0, 51, 1);
+    text-decoration: underline;
+}
+
+/* BUTTONS */
+.button,
+button {
+    font-size: 1em;
+    display: inline-block;
+    background-color: rgba(0, 51, 102, 1);
+    color: rgba(255,255,255,1);
+    padding: 1em 1.5em;
+    border-radius: .5em;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 1;
+    text-align: center;
+}
+.button:hover,
+button:hover {
+    color: rgba(255,255,255,1);
+    background-color: rgba(0, 0, 51, 1);
+    text-decoration: none;
+}
+
+.button.alt {
+    background-color: transparent;
+    color: rgba(0, 51, 102, 1);
+    border: 1px solid rgba(0, 51, 102, 1);
+}
+
+.button.alt:hover {
+    color: rgba(255,255,255,1);
+    background-color: rgba(0, 0, 51, 1);
+}
+
+/* BASE LAYOUT */
+
+/* CONTAINER */
+
+
+
+/* MEDIA QUERIES */
+
+/* FOR SMALL-SIZED SCREENS (and Larger) */
+body {
+    font-size: 87.5% /* 14px */
+}
+
+.container {
+    padding: 0 1em;
+    margin: 0 auto;
+    /* overflow-x: hidden; */
+}
+
+/* FOR MID-SIZED SCREENS/TABLETS (and Larger) */
+@media (min-width:768px) {
+}
+
+/* FOR LARGE-SIZED SCREENS/LAPTOPS (and Larger) */
+@media (min-width:1000px) {
+    body { font-size: 100% /* 16px */ }
+    .container {  max-width: 1000px; }
+}
+
+/* FOR EXTRA-LARGE-SIZED SCREENS/DESKTOP MONITORS (and Larger) */
+@media (min-width:1200px) {
+    body { font-size: 112.5% /* 18px */ }
+    .container { max-width: 1200px; }
+}
+
+/* GRID SYSTEM */
+
+.column {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        margin-left: -1%;
+        margin-left: -1%;
+    }
+    .column {
+        flex-grow: 0;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .one-whole { width: 100%; }
+    .one-half { width: 48%; }
+    .one-third { width: 31.3333%; }
+    .push-one-third { margin-left: 34.3333%; }
+    .two-thirds { width: 64.6666%; }
+    .one-fourth { width: 23%; }
+    .push-one-fourth { margin-left: 26%; }
+
+    .row.centered {
+        justify-content: center;
+    }
+
+    .column.centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+/* ------------------------ */
+/* ------------------------ */
+/* ------------------------ */
+
+
+/* FOR LAYOUT DEMO PURPOSES ONLY */
+
+.demo .column {
+    background: rgba(0,0,0,.2);
+    padding: .5em;
+    text-align: center;
+}
+
+.demo .column p {
+    max-width: none;
+}
+
+/* FOR SMALL-SIZED SCREENS (and Larger) */
+body.demo::before {
+    content: "Small Screen (0 - 767px)";
+    display: block;
+    background: red; 
+    color: white;
+    text-align: center;
+    padding: .2em;
+    font-size: .8em;
+}
+
+/* FOR MID-SIZED SCREENS/TABLETS (and Larger) */
+@media (min-width:768px) {
+    body.demo::before { 
+        content: "Mid Screen (768px - 999px)";
+        background: blue; 
+    }
+}
+
+/* FOR LARGE-SIZED SCREENS/LAPTOPS (and Larger) */
+@media (min-width:1000px) {
+    body.demo::before { 
+        content: "Large Screen (1000px - 1199px)";
+        background: green; 
+    }
+}
+
+/* FOR EXTRA-LARGE-SIZED SCREENS/DESKTOP MONITORS (and Larger) */
+@media (min-width:1200px) {
+    body.demo::before { 
+        content: "EX-Larger Screen (1200px + )";
+        background: purple; 
+    }
+}
+
+/* FOR TESTING ONLY */
+/* * {
+    background: rgba(255,0,0,.2);
+    color: rgba(255,0,0,.2);
+    box-shadow: 0 0 1px 1px inset rgba(255,0,0,.5);
+} */
