@@ -345,7 +345,22 @@ section,
   max-width: none;
 }
 
-/* Header & Footer */
+/* SITE STRUCTURE*/
+
+/* SITE HEADER*/
+.site-header {
+  padding: 1em;
+}
+
+/* ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
+@media (min-width: 768px) {
+  .site-header .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* HEADER & FOOTER */
 body {
   background: #fff;
 }
