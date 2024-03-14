@@ -149,7 +149,7 @@ img {
   }
 
 .button:hover, button:hover{
-  background-color:rgba(96, 184, 168, 0.8);
+  background-color:rgba(148, 246, 228, 0.8);
  border-color: rgba(38, 136, 118, 0.8);
   color: white;
   text-decoration: none;
