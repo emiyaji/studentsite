@@ -91,13 +91,13 @@ P {
 /* LINKS */
 
 a {
-  color: rgba(34, 136, 0, 0.8);
+  color: rgba(10, 102, 99, 0.8);
   text-decoration: none;
 
 }
 
 a:hover {
-  color: rgba(51, 202, 1, 0.8);
+  color: rgba(144, 235, 234, 0.8);
   text-decoration: underline;
 }
 
@@ -153,8 +153,8 @@ img {
 
 .button, button, form input[type="submit"] {
 
-  background-color: rgba(78, 171, 47, 0.8);
-  border: 1px solid rgba(51, 202, 1, 0.8);
+  background-color: rgba(10, 102, 99, 0.8);
+  border: 1px solid rgba(24, 164, 159, 0.8);
   color: rgb(243, 243, 243);
   padding: 10px;
   display: inline-block;
@@ -167,22 +167,22 @@ img {
 
 .button:hover, button:hover,
 form input[type="submit"]:hover {
-  background-color: rgba(91, 237, 42, 0.8);
- border-color:rgba(91, 237, 42, 0.8);
-  color: white;
+  background-color: rgba(24, 164, 159, 0.8);
+ border-color:rgba(24, 164, 159, 0.8);
+  color: black;
   text-decoration: none;
  
 }
 
 .button.alt{
-  border: 1px solid rgba(51, 202, 1, 0.8);
+  border: 1px solid rgba(24, 164, 159, 0.8);
   background-color: transparent;
-  color: rgba(51, 202, 1, 0.8);
+  color: rgba(24, 164, 159, 0.8);
 }
 
 .button.alt:hover {
-  border: 1px solid rgba(78, 171, 47, 0.8);
-  background-color:rgba(78, 171, 47, 0.8);
+  border: 1px solid rgba(24, 164, 159, 0.8);
+  background-color:rgba(24, 164, 159, 0.8);
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -252,7 +252,7 @@ body.demo:before {
 
 @media (min-width: 768px) {
   body.demo::before {
-    background-color: #bcb83d;
+    background-color: #57bfb5;
     content: "Mid Sized (Tablet) 786-1050!";
   }
 }
@@ -265,7 +265,7 @@ body.demo:before {
   }
   @media (min-width: 1250px) {
     body.demo::before {
-      background-color: #89c;
+      background-color: #693;
       content: "Extra Large (Desktop) 1250+!";
     }
     }
