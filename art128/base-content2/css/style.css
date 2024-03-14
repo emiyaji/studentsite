@@ -1,0 +1,60 @@
+body {
+    font-size: 87.5%;
+}
+
+@media (min-width: 768px) {
+    body { 
+        font-size: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    body { 
+        font-size: 112.5%;
+    }
+}
+
+h1 {
+    font-size: 2.25em;
+}
+
+h2 {
+    font-size: 1.875em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.3125em;
+}
+
+h5 {
+    font-size: 1.125em;
+}
+h6 {
+    font-size: 1.5em;
+}
+p {
+    margin: 0;
+    text-indent: 2em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: .5em 0;
+}
+
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+    margin-top: 2em;
+}
+
+/* MEDIA */
+img {
+    max-width: 100%;
+    height: auto;
+}
