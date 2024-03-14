@@ -498,3 +498,47 @@ article p:first-of-type:first-letter {
   margin-bottom: 0;
   float: left;
 }
+
+/* FORMS */
+form {
+  max-width: 38em;
+  margin: 2em auto;
+}
+
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  font: 1em;
+}
+
+form label {
+  margin-top: 1.5em;
+  margin-bottom: .2em;
+}
+
+form input[type=text],
+form textarea {
+  border: 1px solid #ccc;
+  padding: .25em;
+  color: #666;
+}
+
+form textarea {
+  min-height: 10em;
+  line-height: 1.5;
+}
+
+form input[type=submit] {
+  margin-top: 1.5em;
+  width: auto;
+
+}
+
+/* FOR DEV PURPOSES ONLY */
+/* body * {
+  background-color: rgba(0,0,0,.05);
+  border: 1px solid rgba(0,0,0,.1);
+  color: rgba(0,0,0,.5);
+} */
