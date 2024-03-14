@@ -107,6 +107,12 @@ a:hover {
   text-align: center;
 }
 
+.hidden {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+}
+
 .full-width {
   max-width: none;
   width: 100%;
