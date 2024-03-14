@@ -1,0 +1,544 @@
+/* #BASE CSS (Initital Setup)
+---------------------------------
+    #BASE CONTENT
+        #TYPOGRAPHY
+            #BODY
+            #HEADINGS
+            #PARAGRAPHS
+            #LINKS
+            #HELPERS
+        #MEDIA
+            #IMAGES
+        #COMPONENTS
+            #BUTTONS
+    #BASE LAYOUT
+        #SIMPLE RESET
+        #MEDIAQUERIES
+        #CONTAINER
+        #GRID SYSTEM
+            #CLEARFIX
+    #BASE SITE
+        #SITE STR UCTURE
+            #HEADER
+                # site-id (LOGO)
+            #FOOTER
+            #SECTIONS
+            #SUB PAGES
+        #SITE NAVIGATION
+            #TOGGLE-NAV (Default for Small Screens)
+--------------------------------- */
+
+/*  TYPOGRAPHY - Base body */
+
+body {
+  font-size: 87.5%; /* 14px */
+  font-family: Helvetica, arial, sans-serif;
+  line-height: 1.45;
+  color: rgba(0, 0, 0, .8)
+}
+
+/* HEADINGS */
+/* 
+      Based on a Traditional Typographic Scale
+      48, 36, 24 ,21, 18, 16
+*/
+
+h1 {
+ font-size: 3em; /* 48px */
+ line-height: 1; 
+
+}
+
+h2 {
+  font-size: 2.25em; /* 36px */
+  line-height: 1.1; 
+
+}
+
+h3 {
+  font-size: 1.5em; /* 24px */
+  line-height: 1.2; 
+
+}
+
+h4 {
+  font-size: 1.3125em; /* 21px */
+  line-height: 1.3; 
+
+}
+
+h5 {
+  font-size: 1.125em; /* 18px */
+  line-height: 1.4; 
+
+}
+
+h6 {
+  font-size: 1em; /* 16px */
+  line-height: 1.5; 
+
+}
+
+
+/* PARAGRAPH */ 
+
+P {
+  margin: 0;
+  max-width: 38em;
+}
+
+/* LINKS */
+
+a {
+  color: rgba(156, 251, 233, 0.8);
+  text-decoration: none;
+
+}
+
+a:hover {
+  color:rgba(156, 251, 233, 0.8);
+  text-decoration: underline;
+}
+
+
+/* HELPER CLASSES (centering) */
+
+.text-centered {
+  text-align: center;
+}
+
+.hidden {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+}
+
+.full-width {
+  max-width: none;
+  width: 100%;
+}
+
+.horiz-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* IMAGES */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* BUTTONS */
+
+.menu-button {
+  border: none;
+  background-color: transparent;
+}
+.menu-button:hover {
+  border: none;
+  background-color: transparent;
+}
+
+.button, button {
+  background-color: rgba(96, 184, 168, 0.8);
+  border: 1px solid rgba(38, 136, 118, 0.8);
+  color: rgb(243, 243, 243);
+  padding: 10px;
+  display: inline-block;
+  margin: .5em .5em .5em 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: .5em;
+  line-height: 1;
+  }
+
+.button:hover, button:hover{
+  background-color: rgba(138, 226, 210, 0.8);
+ border-color: rgba(38, 136, 118, 0.8);
+  color: white;
+  text-decoration: none;
+ 
+}
+
+.button.alt{
+  border: 1px solid rgba(96, 184, 168, 0.8);
+  background-color: transparent;
+  color: rgba(0, 65, 58, 0.8);
+}
+
+.button.alt:hover {
+  border: 1px solid rgba(138, 226, 210, 0.8);
+  background-color:rgba(138, 226, 210, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.row.button {
+  text-align: center;
+}
+
+/* LAYOUT RESET */
+
+* {
+  box-sizing: border-box;
+}
+
+/* CONTAINER */
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 4%;
+
+}
+
+@media (min-width: 768px) {
+  /* TABLET Sized Styling goes here! */
+}
+
+@media (min-width: 1050px) {
+  body {
+    font-size: 100%; /*16px*/
+  }
+
+  .container {
+      max-width: 1000px;
+   }
+
+}
+
+@media (min-width: 1250px) {
+ body {
+    font-size: 112.5%; /*18px*/
+  }
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* For DEMO purpose only */
+body.demo {
+padding-top: 2em;
+margin: 0;
+}
+
+body.demo:before {
+  content: "Small screen LESS than 786px!";
+  background-color: #933;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  color: white;
+  padding: .5em;
+}
+
+@media (min-width: 768px) {
+  body.demo::before {
+    background-color: #bcb83d;
+    content: "Mid Sized (Tablet) 786-1050!";
+  }
+}
+
+   @media (min-width: 1050px) {
+  body.demo::before {
+    background-color: #693;
+    content: "Large (Notebook)  1050-1250!";
+  }
+  }
+  @media (min-width: 1250px) {
+    body.demo::before {
+      background-color: #89c;
+      content: "Extra Large (Desktop) 1250+!";
+    }
+    }
+
+  /* SEMANTIC GRID System */
+
+  .row > .column {
+    margin-bottom: 4%;
+  }
+
+  @media (min-width: 768px) {
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-left: -1%;
+      margin-right: -1%;
+    }
+
+    .row > .column {
+      flex-grow: 1;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+    .row > .column.one-half {
+      max-width: 46%;
+    }
+
+    .row > .column.one-third {
+      max-width: 29.333%;
+    }
+
+    .row > .column.two-thirds {
+      max-width: 62.333%;
+    }
+
+    .row > .column.one-fourth {
+      max-width: 21%;
+    }
+    .row > .column.centered {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /* demo purpose */
+  .demo .column {
+    background: rgba(0, 0, 0, .2);
+    padding: .5em;
+    text-align: center;
+  }
+
+/* SITE STRUCTURE */
+
+/* SITE HEADER */
+.site-header {
+  padding: 1em;
+}
+
+/* LARGER SCREENS LOGO LEFT, NAV RIGHT */
+@media(min-width: 768px) {
+  .site-header .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* STYLING FOR HEADER + FOOTER */
+ 
+  .site-header a, .site-footer a  {
+    color:rgba(0, 0, 0, .8);
+    text-decoration: none;
+  }
+  .site-header a:hover, .site-footer a:hover  {
+    color:rgba(0, 0, 0, 1);
+    text-decoration: none;
+  }
+
+/* LOGO AREA */
+
+.site-id h1 {
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+  padding-top: .55em;
+}
+
+
+/* SITE NAV */
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.site-nav a {
+  display: block;
+  padding: 1em;
+}
+.site-nav .menu-button {
+  display: none;
+}
+
+/* SECTIONS */
+section {
+padding: 3em 0;
+}
+
+.column.one-third {
+text-align: center;
+}
+
+/* HERO */
+
+.hero {
+  padding: 6em 4%;
+  background-color: rgb(178, 186, 178);
+  text-align: center;
+}
+
+.hero h1, p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* TOGGLE NAV */
+
+@media(max-width: 768px) {
+  .toggle-nav .site-id {
+    position: absolute;
+  }
+  .toggle-nav .site-nav {
+    text-align: right;
+  }
+  .toggle-nav .site-nav .menu-button {
+    display: block;
+    /* background: pink; */
+    display: inline-block;
+    cursor: pointer;
+    padding: .5em;
+    border: 1px solid black;
+    margin-bottom: .8em;
+
+  }
+  .toggle-nav .site-nav .menu-button::selection{
+   background-color: rgba(255,255,255, 0);
+  }
+  .toggle-nav .site-nav ul {
+    display: block;
+    text-align: center;
+  }
+  .toggle-nav .site-nav a:hover {
+    background-color: rgba(156, 251, 233, 0.8);
+    color:white;
+}
+.toggle-nav[data-navstate="closed"] ul {
+  height: 0;
+  overflow: hidden;
+}
+.toggle-nav[data-navstate="open"] ul {
+  height: auto;
+  overflow: visible;
+}
+}
+
+/* NAVICON */
+.toggle-nav .site-nav .menu-button.navicon {
+border: none;
+color: rgb(255, 255, 255, 0);
+padding: 0;
+margin: 0;
+
+}
+.toggle-nav .site-nav .menu-button.navicon::after {
+content: "\2630";
+display: inline-block;
+padding: .2em .4em;
+color: rgba(0,0,0, .8);
+font-size: 2em;
+margin: 0;
+padding: 0 .4em;
+}
+
+.toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
+content: "\2715";
+}
+
+/*SUB PAGES */
+
+article {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article h1, 
+article h1 + .subhead, 
+article .date {
+  text-align: center;
+} 
+
+article h2.subhead {
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+article .subhead {
+  font-weight: normal;
+  opacity: .7;
+}
+
+article .date {
+  font-size: .75em;
+  opacity: .5;
+  margin-bottom: 3em;
+}
+
+article p + h1,
+article p + h2, 
+article p + h3,
+article p + h4,
+article p + h5,
+article p + h6 {
+  margin-top: 1.5em;
+}
+
+/* article p:first-of-type {
+  font-size: 1.4em;
+  line-height: 1.3em;
+} */
+
+article p:first-of-type:first-letter {
+  font-size: 3em;
+  line-height: 1em;
+  background: #000;
+  color: #fff;
+  padding: .2em .4em;
+  margin-right: .2em;
+  margin-bottom: 0;
+  float: left;
+}
+
+/* FORMS */
+form {
+  max-width: 38em;
+  margin: 2em auto;
+}
+
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  font: 1em;
+}
+
+form label {
+  margin-top: 1.5em;
+  margin-bottom: .2em;
+}
+
+form input[type=text],
+form textarea {
+  border: 1px solid #ccc;
+  padding: .25em;
+  color: #666;
+}
+
+form textarea {
+  min-height: 10em;
+  line-height: 1.5;
+}
+
+form input[type=submit] {
+  margin-top: 1.5em;
+  width: auto;
+
+}
+
+/* FOR DEV PURPOSES ONLY */
+/* body * {
+  background-color: rgba(0,0,0,.05);
+  border: 1px solid rgba(0,0,0,.1);
+  color: rgba(0,0,0,.5);
+} */
