@@ -447,19 +447,54 @@ content: "\2715";
 /*SUB PAGES */
 
 article {
-  max-width: 600px;
+  max-width: 38em;
   margin-left: auto;
   margin-right: auto;
 }
 
 article h1, 
-article h1 + .subhead,
+article h1 + .subhead, 
 article .date {
   text-align: center;
-}
+} 
+
 article h2.subhead {
-font-weight: normal;
-font-size: 1.5em;
-line-height: 1.2;
-opacity: .7;
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+article .subhead {
+  font-weight: normal;
+  opacity: .7;
+}
+
+article .date {
+  font-size: .75em;
+  opacity: .5;
+  margin-bottom: 3em;
+}
+
+article p + h1,
+article p + h2, 
+article p + h3,
+article p + h4,
+article p + h5,
+article p + h6 {
+  margin-top: 1.5em;
+}
+
+/* article p:first-of-type {
+  font-size: 1.4em;
+  line-height: 1.3em;
+} */
+
+article p:first-of-type:first-letter {
+  font-size: 3em;
+  line-height: 1em;
+  background: #000;
+  color: #fff;
+  padding: .2em .4em;
+  margin-right: .2em;
+  margin-bottom: 0;
+  float: left;
 }
