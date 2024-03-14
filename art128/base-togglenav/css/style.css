@@ -547,40 +547,28 @@ section {
 
 @media (max-width: 767px) {
   .toggle-nav .site-id {
-    position: absolute;
+    position: absolute
   }
   .toggle-nav .site-nav {
-    text-align: right;
+    text-decoration: right;
   }
   .toggle-nav .site-nav .menu-button {
     display: block;
-    background: pink;
     display: inline-block;
     cursor: pointer;
-    padding: .5em .8em;
-    border: 1px solid black;
+    padding: .3em, .8em;
+    margin-bottom: .8em;
+    border: 1px olid black;
   }
-  .toggle-nav .site-nav .menu-button:selection {
-    background-color: rgba(225,225,225,0);
-  .toggle-nav .site-nav ul {
-    display: block;
-    text-align: center;
-  }
-
   .toggle-nav .site-nav a:hover {
-    background-color: rgba0,0,153,1);
+    background-color: rgba (0,0,153,1);
     color: white;
-  }
-  }
-
-
-
-
-  .site-navigation ul li,
-.site-navigation ul li ul li {
-    display: block;
-  }
 }
+.toggle-nav[data-navstate="closed"] ul {
+  height: 0;
+  overflow: hidden;
+}
+
 /* Default Site-Navigation (footer only) */
 .site-footer .site-navigation ul {
   border-top: none;
