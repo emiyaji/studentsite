@@ -443,3 +443,11 @@ padding: 0 .4em;
 .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
 content: "\2715";
 }
+
+/*SUB PAGES */
+
+article {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
