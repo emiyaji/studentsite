@@ -259,13 +259,13 @@ body.demo:before {
 
    @media (min-width: 1050px) {
   body.demo::before {
-    background-color: #693;
+    background-color: rgb(51, 153, 129);
     content: "Large (Notebook)  1050-1250!";
   }
   }
   @media (min-width: 1250px) {
     body.demo::before {
-      background-color: #693;
+      background-color: rgb(51, 153, 129);
       content: "Extra Large (Desktop) 1250+!";
     }
     }
@@ -391,7 +391,7 @@ text-align: center;
   
 }
 
-.hero h1, p {
+.hero p h1,  {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
