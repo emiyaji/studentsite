@@ -556,10 +556,21 @@ section {
     display: block;
     background: pink;
     display: inline-block;
+    cursor: pointer;
+    padding: .5em .8em;
+    border: 1px solid black;
   }
+  .toggle-nav .site-nav .menu-button:selection {
+    background-color: rgba(225,225,225,0);
   .toggle-nav .site-nav ul {
     display: block;
     text-align: center;
+  }
+
+  .toggle-nav .site-nav a:hover {
+    background-color: rgba0,0,153,1);
+    color: white;
+  }
   }
 
 
