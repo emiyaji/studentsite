@@ -44,6 +44,10 @@ body {
       48, 36, 24 ,21, 18, 16
 */
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.5em 0;
+}
+
 h1 {
  font-size: 3em; /* 48px */
  line-height: 1; 
@@ -84,7 +88,7 @@ h6 {
 /* PARAGRAPH */ 
 
 P {
-  margin: 0;
+  margin: .5em 0;
   max-width: 38em;
 }
 
@@ -151,7 +155,8 @@ img {
   background-color: transparent;
 }
 
-.button, button, form input[type="submit"] {
+.button,
+form input[type="submit"] {
 
   background-color: rgba(10, 102, 99, 0.8);
   border: 1px solid rgba(24, 164, 159, 0.8);
@@ -165,7 +170,7 @@ img {
   line-height: 1;
   }
 
-.button:hover, button:hover,
+.button:hover,
 form input[type="submit"]:hover {
   background-color: rgba(24, 164, 159, 0.8);
  border-color:rgba(24, 164, 159, 0.8);
@@ -310,7 +315,7 @@ body.demo:before {
     }
   }
 
-  /* demo purpose */
+  /* for demo purpose */
   .demo .column {
     background: rgba(0, 0, 0, .2);
     padding: .5em;
@@ -336,7 +341,8 @@ body.demo:before {
 
 /* STYLING FOR HEADER + FOOTER */
  
-  .site-header a, .site-footer a  {
+  .site-header a,
+  .site-footer a {
     color:rgba(0, 0, 0, .8);
     text-decoration: none;
   }
@@ -375,7 +381,7 @@ body.demo:before {
 
 /* SECTIONS */
 section {
-padding: 2em 0;
+padding: 3em 0;
 }
 
 .column.one-third {
@@ -391,7 +397,8 @@ text-align: center;
   
 }
 
-.hero p h1,  {
+.hero h1,
+.hero p  {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
