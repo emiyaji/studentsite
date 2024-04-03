@@ -136,10 +136,10 @@ a:hover {
 /* IMAGES */
 
 img {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
 }
-
+x
 /* BUTTONS */
 
 .menu-button {
@@ -322,7 +322,7 @@ body.demo:before {
 /* SITE HEADER */
 .site-header {
   padding: 1.5em;  
-  background: #fff;
+  background: transparent;
  
 }
 
@@ -386,7 +386,7 @@ text-align: center;
 
 .hero {
   padding: 6em 4%;
-  background-color: rgb(188, 231, 220);
+  background-color: transparent;
   text-align: center;
   
 }
@@ -471,7 +471,7 @@ margin: 0 auto 8em auto;
 article h1 {
 text-align: center;
 }
-article h1 + h2 {
+article h1 + h2 + h4 {
 text-align: center;
 font-size: 1.5em;
 line-height: 1.25em;
