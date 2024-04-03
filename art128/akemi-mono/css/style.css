@@ -32,6 +32,11 @@
 /*  TYPOGRAPHY - Base body */
 
 body {
+  background-image: 
+  url('img/beach-background.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-size: 87.5%; /* 14px */
   font-family: Helvetica, arial, sans-serif;
   line-height: 1.45;
@@ -198,7 +203,8 @@ form input[type="submit"]:hover {
 
 /* CONTAINER */
 
-body {
+.body {
+  
   margin: 0;
 }
 
@@ -271,11 +277,12 @@ body.demo:before {
     }
 
   /* SEMANTIC GRID System */
-
   .row > .column {
     margin-bottom: 4%;
   }
-
+  
+.shop {
+  
   @media (min-width: 768px) {
     .row {
       display: flex;
@@ -309,6 +316,7 @@ body.demo:before {
       margin-right: auto;
     }
   }
+}
 
   /* demo purpose */
   .demo .column {
@@ -323,7 +331,10 @@ body.demo:before {
 .site-header {
   padding: 1.5em;  
   background: transparent;
- 
+ img {
+    max-width: 60%;
+    height: auto;
+  }
 }
 
 /* LARGER SCREENS LOGO LEFT, NAV RIGHT */
@@ -382,16 +393,17 @@ padding: 2em 0;
 text-align: center;
 }
 
+
 /* HERO */
 
 .hero {
   padding: 6em 4%;
   background-color: transparent;
   text-align: center;
-  
 }
 
-.hero p h1,  {
+.hero h1, 
+p {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
