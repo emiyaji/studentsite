@@ -33,14 +33,16 @@
 
 body {
   background-image: 
-  url('img/beach-background.gif');
+  url('../img/beach-background.gif');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   font-size: 87.5%; /* 14px */
   font-family: Helvetica, arial, sans-serif;
   line-height: 1.45;
-  color: rgba(0, 0, 0, .8)
+  color: rgba(0, 0, 0, .8);
+  margin: 0;
+
 }
 
 /* HEADINGS */
@@ -130,6 +132,12 @@ a:hover {
   left:-9999px;
 }
 } */
+
+.hidden {
+  position:absolute;
+  top:-9999px;
+  left:-9999px;
+}
 
 @media(max-width: 768px) {
 .hidden-mobile {
@@ -807,7 +815,7 @@ position: fixed;
 width: 100%;
 top: 0;
 z-index: 100;
-background-color: #fff;
+background-color: transparent;
 }
 .site-header.fixed + .site-main {
 padding-top: 3em;
