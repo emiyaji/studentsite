@@ -149,7 +149,7 @@ a:hover {
 /* IMAGES */
 
 img {
-  max-width: 60%;
+  max-width: 100%;
   height: auto;
 }
 x
@@ -247,6 +247,18 @@ form input[type="submit"]:hover {
   }
 }
 
+.alt-parent {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.alt-child {
+  background-color: transparent;
+  border: none;
+  margin: 1em;
+  padding: 1em;
+}
 /* For DEMO purpose only */
 body.demo {
 padding-top: 2em;
