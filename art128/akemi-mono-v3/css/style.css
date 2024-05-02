@@ -303,6 +303,32 @@ body.demo:before {
   
 .Gallery {
   
+  .parent {
+    background: yellow;
+    text-align: right;
+  }
+  
+  .child {
+    display: inline-block;
+    background-color: pink;
+    border: 1px solid red;  
+    margin: 1em;
+    padding: 1em;
+  }
+  
+  /* NEW SCHOOL FLEXBOX APPROACH */
+  .alt-parent {
+    background: yellow;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .alt-child {
+    background-color: pink;
+    border: 1px solid red;  
+    margin: 1em;
+    padding: 1em;
+  }
   @media (min-width: 768px) {
     .row {
       display: flex;
