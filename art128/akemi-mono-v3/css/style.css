@@ -339,6 +339,11 @@ body.demo:before {
   }
 }
 
+img {
+justify-content: center;
+}
+
+
   /* demo purpose */
   .demo .column {
     background: rgba(0, 0, 0, .2);
