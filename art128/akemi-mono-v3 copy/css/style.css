@@ -213,11 +213,11 @@ form input[type="submit"]:hover {
 
 .body {
   
-  margin: 0;
+  margin:0;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 4%;
 
@@ -232,9 +232,7 @@ form input[type="submit"]:hover {
     font-size: 100%; /*16px*/
   }
 
-  .container {
-      max-width: 1000px;
-   }
+
 
 }
 
@@ -276,71 +274,161 @@ body.demo:before {
   padding: .5em;
 }
 
-@media (min-width: 768px) {
-  body.demo::before {
-    background-color: #57bfb5;
-    content: "Mid Sized (Tablet) 786-1050!";
-  }
-}
-
-   @media (min-width: 1050px) {
-  body.demo::before {
-    background-color: rgb(51, 153, 129);
-    content: "Large (Notebook)  1050-1250!";
-  }
-  }
-  @media (min-width: 1250px) {
-    body.demo::before {
-      background-color: rgb(51, 153, 129);
-      content: "Extra Large (Desktop) 1250+!";
-    }
-    }
-
   /* SEMANTIC GRID System */
   .row > .column {
     margin-bottom: 4%;
   }
+  /*hover imgs*/
+
+  .container {
+    max-width: 1200px ;
+    margin: 0 auto;
   
-.Gallery {
-  
-  
-  @media (min-width: 768px) {
-    .row {
-      display: flex;
-      justify-content: space-between;
-      margin-left: -1%;
-      margin-right: -1%;
-    }
-
-    .row > .column {
-      flex-grow: 1;
-      margin-left: 2%;
-      margin-right: 2%;
-    }
-    .row > .column.one-half {
-      max-width: 46%;
-    }
-
-    .row > .column.one-third {
-      max-width: 29.333%;
-    }
-
-    .row > .column.two-thirds {
-      max-width: 62.333%;
-    }
-
-    .row > .column.one-fourth {
-      max-width: 21%;
-    }
-    .row > .column.centered {
-      margin-left: auto;
-      margin-right: auto;
-    }
   }
+  .image-row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+  .image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
 }
 
+.image-wrapper {
+  position: relative;
+}
 
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease;
+}
 
+.image-container:hover img {
+  opacity: 0;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.image-container:hover .hover-image {
+ opacity: 1;
+}
+.text-centered {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color:black;
+  background-color: transparent;
+  padding: 5px ;
+  border-radius: 5px;
+
+  
+ 
+}
+.hover-image1 {
+    background-image: url('../img/denim-bag2.jpg');
+  }
+  .hover-image2 {
+    background-image: url('../img/bent-back-tee2.jpg');
+  }
+  .hover-image3 {
+    background-image: url('../img/mushrooms-of-HI-tee2.jpg');
+  }
+  .hover-image4 {
+    background-image: url('../img/tan-tee2.JPG');
+  }
+  .hover-image5 {
+    background-image: url('../img/grey-tee2.jpg');
+  }
+  .hover-image6 {
+    background-image: url('../img/stool2.jpg');
+  }
+
+.hover-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    width: calc(50% - 20%px);
+    height: calc(50% - 20%px) ;
+  }
+  .image-container:hover {
+  width: calc(50% - 20%px);
+  height: calc(50% - 20%px);
+}
+}
+@media (max-width: 480px) {
+  .image-containter {
+    width: 100%;
+    margin-right: 0;
+  }
+  .image-container:hover {
+    width: 100%;
+    margin-right: 0;
+}
+}
+
+@media (max-width: 768px) {
+    .image-container {
+      width: calc(50% - 20%);
+      height: calc(50% - 20%);
+  }
+    .image-container:hover {
+    width: calc(50% - 20%);
+    height: calc(50% - 20%);
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+      width: 100%;
+      margin-right: 0;
+    }
+    .image-container:hover {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  .caption {
+    text-align: center;
+    background-color:transparent;
+    color: black; 
+    padding: 10px;
+    position: relative;
+    bottom: -45px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+    
+  
+  .image-container:hover .caption {
+    opacity: 1;
+}
+  
+  
   /* demo purpose */
   .demo .column {
     background: rgba(0, 0, 0, .2);
@@ -353,10 +441,12 @@ body.demo:before {
 /* SITE HEADER */
 .site-header {
   padding: 1.5em;  
+  color: rgb(242, 238, 196);
   background: transparent;
  img {
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
+    position: sticky;
   }
 }
 
@@ -371,11 +461,12 @@ body.demo:before {
 /* STYLING FOR HEADER + FOOTER */
  
   .site-header a, .site-footer a  {
-    color:rgba(0, 0, 0, .8);
+    
+color: rgba(10, 102, 99, 0.8);
     text-decoration: none;
   }
   .site-header a:hover, .site-footer a:hover  {
-    color:rgba(0, 0, 0, 1);
+    color: rgba(24, 164, 159, 0.8);
     text-decoration: none;
   }
 
@@ -807,6 +898,11 @@ margin-right: 0;
 }
 }
 
+article {
+  justify-content: center;
+  text-align: center;
+}
+
 span {
 color: rgb(180, 220, 186);
 font-size: 1em;
@@ -829,9 +925,10 @@ border-bottom: 3px solid rgba(0, 0, 0, .2);
 .site-header.fixed {
 position: fixed;
 width: 100%;
+height: 100px;
 top: 0;
 z-index: 100;
-background-color: transparent;
+background-color: white;
 }
 .site-header.fixed + .site-main {
 padding-top: 3em;
