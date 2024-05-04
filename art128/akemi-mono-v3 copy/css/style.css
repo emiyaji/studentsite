@@ -225,8 +225,12 @@ form input[type="submit"]:hover {
 
 }
 
+
 @media (min-width: 768px) {
   /* TABLET Sized Styling goes here! */
+}
+.img {  width: calc(50% - 20%);
+  height: calc(50% - 20%);
 }
 
 @media (min-width: 1050px) {
@@ -371,25 +375,18 @@ body.demo:before {
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
+
+
+
+@media (max-width: 978px) {
   .image-container {
-    width: calc(50% - 20%px);
-    height: calc(50% - 20%px) ;
-  }
+    width: calc(50% - 20%);
+    height: calc(50% - 20%);
+}
   .image-container:hover {
-  width: calc(50% - 20%px);
-  height: calc(50% - 20%px);
-}
-}
-@media (max-width: 480px) {
-  .image-containter {
-    width: 100%;
-    margin-right: 0;
+  width: calc(50% - 20%);
+  height: calc(50% - 20%);
   }
-  .image-container:hover {
-    width: 100%;
-    margin-right: 0;
-}
 }
 
 @media (max-width: 768px) {
@@ -415,9 +412,9 @@ body.demo:before {
   }
   .caption {
     text-align: center;
-    background-color:rgba(18, 123, 136, 0.815);
-    color: white; 
-    padding: 5px;
+    background-color: transparent;
+    color: rgb(182, 255, 249); 
+    padding: 0;
     display: none;
     position: absolute;
     bottom: 0;
@@ -427,7 +424,15 @@ body.demo:before {
     
   }
   
-    
+  .text-with-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 37, 37, 0.95);
+  }
+  .text-with-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+                 0 0 20px rgba(255, 243, 206, 0.3),
+                 0 0 30px rgba(251, 227, 149, 0.3),
+                 0 0 40px rgba(249, 216, 109, 0.3);
+  }  
   
   .image-container:hover .caption {
     opacity: 1;
@@ -519,7 +524,7 @@ text-align: center;
 /* HERO */
 
 .hero {
-  padding: 6em 4%;
+  padding: 10em 4%;
   background-color: transparent;
   text-align: center;
 }
@@ -559,7 +564,7 @@ p {
   }
   .toggle-nav .site-nav a:hover {
     background-color: rgba(36, 226, 220, 0.905);
-    color:white;
+    color:rgba(10, 102, 99, 1);
 }
 
 .toggle-nav[data-navstate=open] ul {
@@ -585,7 +590,7 @@ margin: 0;
 content: "\2630";
 display: inline-block;
 padding: .2em .4em;
-color: rgba(0,0,0, .8);
+color: rgb(255, 255, 255);
 font-size: 2em;
 margin: 0;
 padding: 0 .4em;
