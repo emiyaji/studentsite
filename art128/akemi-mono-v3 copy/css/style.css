@@ -469,11 +469,11 @@ body.demo:before {
  
   .site-header a, .site-footer a  {
     
-color: rgba(10, 102, 99, 0.8);
+color: white;
     text-decoration: none;
   }
   .site-header a:hover, .site-footer a:hover  {
-    color: rgba(24, 164, 159, 0.8);
+    color: rgba(10, 102, 99, 0.8);
     text-decoration: none;
   }
 
