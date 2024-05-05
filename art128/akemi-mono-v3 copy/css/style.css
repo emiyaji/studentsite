@@ -125,7 +125,7 @@ a:hover {
   margin-right: auto;
 }
 
-/* @media(min-width: 768px) {
+/* \@media(min-width: 768px) {
 .hidden-desktop {
   position: absolute;
   top:-9999px;
@@ -547,7 +547,6 @@ p {
   }
   .toggle-nav .site-nav .menu-button {
     display: block;
-    /* background: pink; */
     display: inline-block;
     cursor: pointer;
     padding: .5em;
@@ -951,3 +950,44 @@ padding-top: 2em;
   padding-bottom: none;
 }
 }
+footer a img {
+  padding: 8px; /* Adds space around the icon */
+  width: 75px; /* Sets the width of the icon */
+  height: auto; /* Maintains the aspect ratio of the icon */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+
+}
+
+footer a:hover img {
+  transform: scale(1.1); /* Scales up the icon slightly on hover */
+}
+.site-footer .container {
+  display: flex; /* Enable flexbox */
+  justify-content: space-between; /* Space between the nav and social link */
+  align-items: center; /* Center items vertically */
+  /* Add padding or any other styles as required */
+}
+
+.site-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  /* Add other styles for your nav items here */
+}
+
+.site-nav li {
+  margin-: 20px; /* Add space between nav items */
+  /* Add other styles for your nav items here */
+}
+
+.footer-social a img {
+  padding: 8px; /* Adds space around the icon */
+  width: 75px; /* Sets the width of the icon */
+  height: auto; /* Maintains the aspect ratio of the icon */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-social a:hover img {
+  transform: scale(1.1); /* Scales up the icon slightly on hover */
+}
+
