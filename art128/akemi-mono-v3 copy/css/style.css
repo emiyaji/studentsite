@@ -683,6 +683,7 @@ float: left;
 
 .toggle-nav.animated[data-navstate=open] li a {
   padding: 0.75em;
+  background-color:rgba(24, 164, 159, 1) ;
 }
 }
 
