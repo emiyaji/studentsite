@@ -975,14 +975,11 @@ footer a:hover img {
   /* Add other styles for your nav items here */
 }
 
-.site-nav li {
-  margin-: 20px; /* Add space between nav items */
-  /* Add other styles for your nav items here */
-}
+
 
 .footer-social a img {
   padding: 8px; /* Adds space around the icon */
-  width: 40px; /* Sets the width of the icon */
+  width: 100px; /* Sets the width of the icon */
   height: auto; /* Maintains the aspect ratio of the icon */
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
