@@ -982,7 +982,7 @@ footer a:hover img {
 
 .footer-social a img {
   padding: 8px; /* Adds space around the icon */
-  width: 75px; /* Sets the width of the icon */
+  width: 10px; /* Sets the width of the icon */
   height: auto; /* Maintains the aspect ratio of the icon */
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
