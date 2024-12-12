@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+ <meta charset="utf-8">
+ <title>Pitacus Chop Art | Home
+ </title>
+ <meta name="description"
+   content="SiteBase: A minimmalistic HTML + CSS + JS base front-end framework for simple website projects">
+
+
+ <!-- This is for MOBILE/ SMALL SCREENS -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+ <!-- ADOBE FONTS -->
+ <link rel="stylesheet" href="https://use.typekit.net/ryx0ilp.css">
+
+
+ <!-- SWIPER CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+ <!-- MAIN CSS -->
+ <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+
+<body id="top">
+
+
+ <header class="site-header toggle-nav animated fixed">
+   <div class="container">
+     <div class="site-id">
+       <a href="#top"><img src="img/header_home_btn.svg" alt="pitacus logo" width="75" height="75"></a>
+       <h1 class="hidden"><a href="#top">Pitacus Chop Art</a></h1>
+     </div>
+     <nav class="site-nav">
+       <button class="menu-button navicon">Menu</button>
+       <ul class="nav">
+
+
+         <li><a href="about/index.html">ABOUT</a></li>
+         <li><a href="our_creations/index.html">OUR CREATIONS</a></li>
+         <li><a href="contact/index.html">CONTACT</a></li>
+
+
+
+
+       </ul>
+     </nav>
+   </div>
+ </header>
+
+
+ <main class="site-main">
+   <section class="hero">
+     <div id="hero-animation">
+       <!-- <img src="img/hero_img.png" alt="logo" width="1000" > -->
+       <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+         type="module"></script>
+       <dotlottie-player src="https://lottie.host/30495be8-175d-4d03-a14e-c73b67b77b50/91VuS1wDEj.json"
+         background="transparent" speed="1" style="width: 1000px; height: auto;" autoplay></dotlottie-player>
+     </div>
+   </section>
+
+
+   <section class="new-arrivals">
+     <div class="container">
+       <h2 class="section-title">
+         New Arrivals
+       </h2>
+       <div class="carousel-section">
+         <div class="swiper-container">
+           <div class="swiper">
+             <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                 <img src="img/1.jpg" alt="placeholder">
+               </div>
+               <div class="swiper-slide">
+                 <img src="img/22.jpg" alt="placeholder">
+               </div>
+               <div class="swiper-slide rotate-left-10">
+                 <img src="img/IMG_3938.jpg" alt="placeholder">
+               </div>
+               <div class="swiper-slide rotate-right-15">
+                 <img src="img/3.jpg" alt="placeholder">
+               </div>
+               <div class="swiper-slide rotate-left-15">
+                 <img src="img/4.jpg" alt="placeholder">
+               </div>
+               <div class="swiper-slide rotate-right-10">
+                 <img src="img/5.jpg" alt="placeholder">
+               </div>
+               <div class="swiper-slide">
+                 <img src="img/6.jpg" alt="placeholder">
+               </div>
+             </div>
+           </div>
+           <div class="swiper-controls">
+             <div class="swiper-pagination"></div>
+             <div class="swiper-navigation">
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+
+   <section class="news">
+     <div class="container">
+       <h2 class="section-title">
+         NEWS
+       </h2>
+       <div class="photo-container">
+         <img src="img/reciept.png" alt="First Photo" class="photo first-photo" width="70%">
+         <img src="img/illikoi.png" alt="Second Photo" class="photo second-photo" width= "35%" >
+       </div>
+     </div>
+   </section>
+   
+</body>
+
+
+<footer class="site-footer">
+  <section class="footer-content">
+    <img src="img/Group 8.png" alt="Footer background" class="footer-background">
+    <a href="index.html" class="home-button">
+      <img src="img/footer home button.png" alt="Home" class="button-image">
+    </a>
+  </section>
+</footer>
+
+
+   <!-- <div class="container">
+     <nav class="site-nav">
+       <ul>
+         <li><a class="scroll" href="#about">ABOUT</a></li>
+         <li><a class="scroll" href="#our creations">OUR CREATIONS</a></li>
+         <li><a class="scroll" href="#contact">CONTACT</a></li>
+       </ul>
+     </nav>
+     <div class="footer-social">
+       <a href="https://www.instagram.com/pitacuschopart" target="_blank" rel="noopener noreferrer"
+         aria-label="Instagram">
+         <img src="img/instagram_logo.png" alt="Instagram" width="10px">
+       </a>
+     </div> -->
+   </div>
+ </section>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CAROUSEL JS-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+ const swiper = new Swiper('.swiper', {
+   // Optional parameters
+   // direction: 'vertical',
+   loop: true,
+
+
+
+
+   // MULTIPLE SLIDES PER VIEW
+   slidesPerView: 5,
+   spaceBetween: 20
+   ,
+
+
+   // If we need pagination
+   pagination: {
+     el: ".swiper-pagination",
+     type: "progressbar",
+   },
+
+
+   // Navigation arrows
+   navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+   },
+
+
+ }); 98
+</script>
+
+
+<!-- SCROLL JS (Ben De Cock's Anchor Scroll)-->
+<script src=js/scroll.js></script>
+
+
+<!--MAIN JS-->
+<script src="js/script.js"></script>
+</body>
+
+
+</html>

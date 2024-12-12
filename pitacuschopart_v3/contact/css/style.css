@@ -1,0 +1,1374 @@
+/* #BASE CSS (Initital Setup)
+---------------------------------
+   #BASE CONTENT
+       #TYPOGRAPHY
+           #BODY
+           #HEADINGS
+           #PARAGRAPHS
+           #LINKS
+           #HELPERS
+       #MEDIA
+           #IMAGES
+       #COMPONENTS
+           #BUTTONS
+   #BASE LAYOUT
+       #SIMPLE RESET
+       #MEDIAQUERIES
+       #CONTAINER
+       #GRID SYSTEM
+           #CLEARFIX
+   #BASE SITE
+       #SITE STR UCTURE
+           #HEADER
+               # site-id (LOGO)
+           #FOOTER
+           #SECTIONS
+           #SUB PAGES
+             #ARTICLES
+       #SITE NAVIGATION
+           #TOGGLE-NAV (Default for Small Screens)
+       #CAROUSEL LAYOUT
+     
+--------------------------------- */
+
+
+/*  TYPOGRAPHY - Base body */
+
+
+body {
+    background-image:
+      url('../img/background.png');
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    font-size: 87.5%;
+    /* 14px */
+    font-family: "sofia-pro", sans-serif;
+    line-height: 1.45;
+    color: rgba(0, 0, 0, .8);
+    margin: 0;
+   
+   
+   
+   
+   }
+   
+   
+   /* HEADINGS */
+   /*
+        Based on a Traditional Typographic Scale
+        48, 36, 24 ,21, 18, 16
+   */
+   
+   
+   h1 {
+    font-size: 3em;
+    /* 48px */
+    line-height: 1;
+   
+   
+   }
+   
+   
+   h2 {
+    font-size: 2.25em;
+    /* 36px */
+    line-height: 1.1;
+    font-family: chain;
+   
+   
+   
+   
+   }
+   
+   
+   h3 {
+    font-size: 1.5em;
+    /* 24px */
+    line-height: 1.2;
+   
+   
+   }
+   
+   
+   h4 {
+    font-size: 1.3125em;
+    /* 21px */
+    line-height: 1.3;
+   
+   
+   }
+   
+   
+   h5 {
+    font-size: 1.125em;
+    /* 18px */
+    line-height: 1.4;
+   
+   
+   }
+   
+   
+   h6 {
+    font-size: 1em;
+    /* 16px */
+    line-height: 1.5;
+   
+   
+   }
+   
+   
+   
+   
+   /* PARAGRAPH */
+   
+   
+   P {
+    margin: 0;
+    max-width: 38em;
+   }
+   
+   
+   /* LINKS */
+   
+   
+   a {
+    color: rgba(10, 102, 99, 0.8);
+    text-decoration: none;
+   
+   
+   }
+   
+   
+   a:hover {
+    color: rgba(144, 235, 234, 0.8);
+    text-decoration: underline;
+   }
+   
+   
+   
+   
+   /* HELPER CLASSES */
+   
+   
+   .text-centered {
+    text-align: center;
+   }
+   
+   
+   .full-width {
+    max-width: none;
+    width: 100%;
+   }
+   
+   
+   .horiz-center {
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+   
+   /* \@media(min-width: 768px) {
+   .hidden-desktop {
+    position: absolute;
+    top:-9999px;
+    left:-9999px;
+   }
+   } */
+   
+   
+   .hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+   }
+   
+   
+   @media(max-width: 768px) {
+    .hidden-mobile {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+   }
+   
+   
+   /* IMAGES */
+   
+   
+   img {
+    max-width: 100%;
+    height: auto;
+   
+   
+   }
+   
+   
+   x
+   /* BUTTONS */
+   
+   
+   .menu-button {
+    border: none;
+    background-color: t;
+   }
+   
+   
+   .menu-button:hover {
+    border: rgba(10, 102, 99, 0.8);
+    background-color: rgba(24, 164, 159, 0.8);
+   }
+   
+   
+   .button,
+   button,
+   form input[type="submit"] {
+   
+   
+    background-color: rgba(10, 102, 99, 0.8);
+    border: 2px solid rgba(24, 164, 159, 0.8);
+    color: #d4a556;
+    padding: 10px;
+    display: inline-block;
+    margin: .5em .5em .5em 0;
+    text-align: center;
+    text-decoration: none;
+   
+   
+    border-radius: .5em;
+    line-height: 1;
+   }
+   
+   
+   .button:hover,
+   button:hover,
+   form input[type="submit"]:hover {
+    background-color: rgba(24, 164, 159, 0.8);
+    border-color: rgba(24, 164, 159, 0.8);
+    color: black;
+    text-decoration: none;
+   
+   
+   }
+   
+   
+   .button.alt {
+    border: 1px solid rgba(24, 164, 159, 0.8);
+    background-color: rgba(197, 255, 253, 0.8);
+    color: rgba(24, 164, 159, 0.8);
+   }
+   
+   
+   .button.alt:hover {
+    border: 1px solid rgba(24, 164, 159, 0.8);
+    background-color: rgba(24, 164, 159, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+   }
+   
+   
+   .row.button {
+    text-align: center;
+   }
+   
+   
+   /* LAYOUT RESET */
+   
+   
+   * {
+    box-sizing: border-box;
+   }
+   
+   
+   /* CONTAINER */
+   
+   
+   .body {
+   
+   
+    margin: 0;
+   }
+   
+   
+   .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4%;
+   
+   
+   }
+   
+   
+   
+   
+   @media (min-width: 768px) {
+    /* TABLET Sized Styling goes here! */
+   }
+   
+   
+   .img {
+    width: calc(50% - 20%);
+    height: calc(50% - 20%);
+   }
+   
+   
+   @media (min-width: 1050px) {
+    body {
+      font-size: 100%;
+      /*16px*/
+    }
+   
+   
+   
+   
+   
+   
+   }
+   
+   
+   @media (min-width: 1250px) {
+    body {
+      font-size: 112.5%;
+      /*18px*/
+    }
+   
+   
+    .container {
+      max-width: 1200px;
+    }
+   }
+   
+   
+   .alt-parent {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+   }
+   
+   
+   .alt-child {
+    background-color: transparent;
+    border: none;
+    margin: 1em;
+    padding: 1em;
+   }
+   
+   
+   /* For DEMO purpose only */
+   body.demo {
+    padding-top: 2em;
+    margin: 0;
+   }
+   
+   
+   body.demo:before {
+    content: "Small screen LESS than 786px!";
+    background-color: #933;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    color: white;
+    padding: .5em;
+   }
+   
+   
+   
+   
+   .text-centered {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+   
+   
+   
+   
+   
+   
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   @media (max-width: 978px) {
+    .image-container {
+      width: calc(50% - 20%);
+      height: calc(50% - 20%);
+    }
+   
+   
+    .image-container:hover {
+      width: calc(50% - 20%);
+      height: calc(50% - 20%);
+    }
+   }
+   
+   
+   @media (max-width: 768px) {
+    .image-container {
+      width: calc(50% - 20%);
+      height: calc(50% - 20%);
+    }
+   
+   
+    .image-container:hover {
+      width: calc(50% - 20%);
+      height: calc(50% - 20%);
+    }
+   }
+   
+   
+   @media (max-width: 480px) {
+    .image-container {
+      width: 100%;
+      margin-right: 0;
+    }
+   
+   
+    .image-container:hover {
+      width: 100%;
+      margin-right: 0;
+    }
+   }
+   
+   
+   .caption {
+    text-align: center;
+    background-color: transparent;
+    color: rgb(182, 255, 249);
+    padding: 0;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+   
+   
+   }
+   
+   
+   
+   
+   /* demo purpose */
+   .demo .column {
+    background: rgba(0, 0, 0, .2);
+    padding: .5em;
+    text-align: center;
+   }
+   
+   
+   /* SITE STRUCTURE */
+   
+   
+   /* SITE HEADER */
+   .site-header {
+    padding: 1.5em;
+    background: transparent;
+    font-family: "sofia-pro", sans-serif;
+    color: #d4a556;
+    font-weight: 400;
+    font-style: normal;
+   
+   
+    img {
+      width: 75px;
+      height: auto;
+      position: relative;
+      top: -12px;
+      /* Maintains the aspect ratio of the icon */
+      transition: transform 0.3s ease;
+      /* Smooth transition for hover effect */
+    }
+   
+   
+    a:hover img {
+      transform: scale(1.1);
+      /* Scales up the icon slightly on hover */
+    }
+   
+   
+   }
+   
+   
+   .site-nav {
+    color: #d4a556
+   }
+   
+   
+   /* LARGER SCREENS LOGO LEFT, NAV RIGHT */
+   @media(min-width: 768px) {
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+    }
+   }
+   
+   
+   /* STYLING FOR HEADER + FOOTER */
+   
+   
+   .site-header a,
+   .site-footer a {
+   
+   
+    color: #d4a556;
+    text-decoration: none;
+   }
+   
+   
+   .site-header a:hover,
+   .site-footer a:hover {
+    color: #724800;
+    text-decoration: none;
+   }
+   
+   
+   /* LOGO AREA */
+   
+   
+   .site-id h1 {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+    padding-top: .55em;
+   }
+   
+   
+   
+   
+   /* SITE NAV */
+   .site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+   
+   
+   }
+   
+   
+   .site-nav a {
+    display: block;
+    padding: 1em;
+   }
+   
+   
+   .site-nav .menu-button {
+    display: none;
+   }
+   
+   
+   /* SECTIONS */
+   .section {
+    padding: 2em 0;
+   }
+   
+   
+   .column.one-third {
+    text-align: center;
+   }
+   
+   
+   
+   
+   
+   
+   /* HERO */
+   
+   
+   .hero {
+    padding: 6em 4%;
+    background-color: transparent;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    z-index: 2;
+   }
+   
+   
+   .hero h1,
+   p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+   
+   /* TOGGLE NAV */
+   
+   
+   @media(max-width: 768px) {
+    .toggle-nav .site-id {
+      position: absolute;
+    }
+   
+   
+    .toggle-nav .site-nav {
+      text-align: right;
+    }
+   
+   
+    .toggle-nav .site-nav .menu-button {
+      display: block;
+      display: inline-block;
+      cursor: pointer;
+      padding: .5em;
+      border: 1px solid black;
+      margin-bottom: .8em;
+   
+   
+    }
+   
+   
+    .toggle-nav .site-nav .menu-button::selection {
+      background-color: rgba(36, 226, 220, 0.905);
+    }
+   
+   
+    .toggle-nav .site-nav ul {
+      display: block;
+      text-align: center;
+    }
+   
+   
+    .toggle-nav .site-nav a:hover {
+      background-color: rgba(36, 226, 220, 0.905);
+      color: rgba(10, 102, 99, 1);
+    }
+   
+   
+    .toggle-nav[data-navstate=open] ul {
+      max-height: none;
+      padding: 1em 0;
+    }
+   
+   
+    .toggle-nav[data-navstate=open] ul ul {
+      padding: 0;
+    }
+   
+   
+   
+   
+   }
+   
+   
+   /* NAVICON */
+   .toggle-nav .site-nav .menu-button.navicon {
+    border: none;
+    color: rgb(255, 255, 255, 0);
+    padding: 0;
+    margin: 0;
+   
+   
+   }
+   
+   
+   .toggle-nav .site-nav .menu-button.navicon::after {
+    content: "\2630";
+    display: inline-block;
+    padding: .2em .4em;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    margin: 0;
+    padding: 0 .4em;
+   }
+   
+   
+   .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
+    content: "\2715";
+   }
+   
+
+   
+   
+   /* Animated Toggle-Nav Menu */
+   @media (max-width: 767px) {
+    .toggle-nav.animated ul {
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      padding: 0;
+      border-width: 0;
+      transition: all 0.3s ease;
+    }
+   
+   
+    .toggle-nav.animated[data-navstate=open] ul {
+      max-height: 138em;
+      opacity: 1;
+      padding: 0.5em 0;
+      border-width: 0px;
+      transition: all 0.6s ease;
+    }
+   
+   
+    .toggle-nav.animated li {
+      padding: 0;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+   
+   
+    .toggle-nav.animated[data-navstate=open] li {
+      padding: 0.25em;
+      opacity: 1;
+      transition: all 0.6s ease 0.2s;
+    }
+   
+   
+    .toggle-nav.animated li a {
+      padding: 0;
+      transition: all 0.3s ease;
+    }
+   
+   
+    .toggle-nav.animated[data-navstate=open] li a {
+      padding: 0.75em;
+      background-color: rgba(24, 164, 159, 1);
+    }
+   }
+   
+   
+   
+   
+   /* FORMS */
+   
+   
+   form {
+    max-width: 600px;
+    margin: 2em auto;
+   }
+   
+   
+   form label,
+   form input,
+   form textarea {
+    display: block;
+    box-sizing: border-box;
+   
+   
+   
+   
+    /* text-align: center; */
+   
+   
+   
+   
+    width: 100%;
+    font-size: 1em;
+   }
+   
+   
+   form label {
+    margin-top: 1em;
+    margin-bottom: .25em;
+   }
+   
+   
+   form input[type="text"],
+   form input,
+   form textarea {
+    border: 1px solid #ccc;
+    padding: .5em;
+    color: #666;
+   }
+   
+   
+   form textarea {
+    min-height: 10em;
+    line-height: 1.5;
+   }
+   
+   
+   form input[type="submit"] {
+    width: auto;
+    margin-top: 1.5em;
+   }
+   
+   
+   /* SIDEBAR */
+   
+   
+   
+   
+   /* Sub Pages with Multiple Column Layout */
+   @media (min-width: 768px) {
+    .subpage-twocol {
+      display: flex;
+    }
+   }
+   
+   
+   @media (min-width: 768px) {
+    .subpage-sidebar {
+      width: 21%;
+      padding-right: 4%;
+    }
+   }
+   
+   
+   .subpage-sidebar .subheader {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    padding: 0.5em 0 0 1em;
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #999;
+   
+   
+   }
+   
+   
+   @media (min-width: 768px) {
+    .subpage-main {
+      width: 70%;
+      padding-left: 4%;
+      border-left: 1px solid #ccc;
+    }
+   }
+   
+   
+   .subpage-main section:first-child {
+    padding-top: 0;
+   }
+   
+   
+   .subpage-main section:last-child {
+    padding-bottom: 5em;
+   }
+   
+   
+   .subpage-navigation {
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 0;
+   }
+   
+   
+   .subpage-navigation ul {
+    margin: 0;
+    padding: 0;
+   }
+   
+   
+   .subpage-navigation ul li {
+    list-style: none;
+    margin-left: 0;
+   }
+   
+   
+   .subpage-navigation ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 0.875em 0 2em;
+    border-bottom: 1px solid #ccc;
+   }
+   
+   
+   .subpage-navigation ul li ul {
+    border-top: none;
+   }
+   
+   
+   .subpage-navigation ul li ul li a {
+    padding-left: 1.875em;
+   }
+   
+   
+   /* Sub page with list items */
+   .list-item {
+    padding: 2em 0;
+   }
+   
+   
+   .list-item .featured-image {
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+   }
+   
+   
+   .list-item article {
+    margin-left: 35%;
+   }
+   
+   
+   .list-item article h2 {
+    margin-top: 0;
+   }
+   
+   
+   .list-item:after {
+    content: "";
+    display: table;
+    clear: both;
+   }
+   
+   
+   .list-item+.list-item {
+    margin-top: 2em;
+    border-top: 1px solid #eee;
+    padding-top: 4em;
+   }
+   
+   
+   /* Swap the display order of two columns */
+   .orderswap {
+    flex-direction: row-reverse;
+   }
+   
+   
+   /* OLD/LEGACY SUPPORT FOR PRE-FLEXBOX ORDERSWAP */
+   /* OLD VERTICAL CENTERING MARKUP PRE-FLEXBOX */
+   .vert-parent .column {
+    display: flex;
+    align-items: center;
+   }
+   
+   
+   /* Thumb Lists */
+   .thumblist {
+    padding: 0;
+   }
+   
+   
+   .thumblist li {
+    list-style: none;
+    margin: 0;
+    padding: 3em 0;
+    clear: both;
+   }
+   
+   
+   .thumblist li img {
+    max-width: 30%;
+    margin: 0 2em 1em 0;
+    float: left;
+   }
+   
+   
+   .thumblist li p {
+    max-width: none;
+   }
+   
+   
+   .thumblist li+li {
+    border-top: 1px solid #ddd;
+   }
+   
+   
+   @media (max-width: 767px) {
+    .thumblist li img {
+      max-width: 100%;
+      margin: 0 0 1em 0;
+      float: none;
+    }
+   }
+   
+   
+   .thumblist-grid {
+    margin: 2em 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   
+   
+   .thumblist-grid li {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 2em;
+    width: 46%;
+    margin-right: 8%;
+    text-align: center;
+    font-size: 0.8em;
+   }
+   
+   
+   .thumblist-grid li a {
+    outline: none;
+   }
+   
+   
+   .thumblist-grid li a img {
+    transition: border-color 0.3s ease;
+    border-color: #fff;
+   }
+   
+   
+   .thumblist-grid li a img:hover {
+    border: 3px solid #39c;
+   }
+   
+   
+   .thumblist-grid li h5,
+   .thumblist-grid li p {
+    line-height: 1.2em;
+   }
+   
+   
+   .thumblist-grid li:nth-child(even) {
+    margin-right: 0;
+   }
+   
+   
+   @media (min-width: 768px) {
+    .thumblist-grid li {
+      width: 19%;
+    }
+   
+   
+    .thumblist-grid li:nth-child(even) {
+      margin-right: 8%;
+    }
+   
+   
+    .thumblist-grid li:nth-child(4n) {
+      margin-right: 0;
+    }
+   }
+   
+   
+   article {
+    justify-content: center;
+    text-align: center;
+   }
+   
+   
+   span {
+    color: rgb(180, 220, 186);
+    font-size: 1em;
+    font-weight: lighter;
+   }
+   
+   
+   /* CUSTOM SITE CSS */
+   /* CUSTOM SITE CSS */
+   /* CUSTOM SITE CSS */
+   .section-title {
+    text-align: left;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    font-family: chainprinter, sans-serif;
+   }
+   
+   
+   .site-header.fixed {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    z-index: 100;
+    background-color: transparent;
+    color: #d4a556;
+   
+   
+    .site-header.fixed+.site-main {
+      padding-top: 2em;
+    }
+   }
+   
+   
+   @media (min-height: 600px) {
+    #contact {
+      padding-bottom: none;
+    }
+   }
+   
+   
+   
+   
+   
+   
+   footer a:hover img {
+    transform: scale(1.1);
+    /* Scales up the icon slightly on hover */
+   }
+   
+   
+   .site-footer .container {
+    display: flex;
+    /* Enable flexbox */
+    justify-content: space-between;
+    /* Space between the nav and social link */
+    align-items: center;
+    /* Center items vertically */
+    /* Add padding or any other styles as required */
+   }
+   
+   
+   .site-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    /* Add other styles for your nav items here */
+   }
+   
+   
+   
+   
+   
+   
+   .footer-social a img {
+    padding: 8px;
+    /* Adds space around the icon */
+    width: 50px;
+    /* Sets the width of the icon */
+    height: auto;
+    /* Maintains the aspect ratio of the icon */
+    transition: transform 0.3s ease;
+    /* Smooth transition for hover effect */
+   }
+   
+   
+   .footer-social a:hover img {
+    transform: scale(1.1);
+    /* Scales up the icon slightly on hover */
+   }
+   
+   
+   /* --------------------------------------------- */
+   /* Basic carousel layout */
+   /* SWIPER STYLING */
+   .swiper {
+    .swiper-slide-active img {
+      scale: 1.2;
+    }
+  }
+  
+  .carousel-section {
+    position: relative;
+    background: transparent;
+    padding-bottom: 2em;
+  }
+  
+  .swiper-container {
+    padding-bottom: 60px; /* Create space for controls */
+  }
+  
+  /* Change progress bar color */
+  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #d4a556 !important;
+  }
+  
+  /* Position the progress bar */
+  .swiper-pagination-progressbar.swiper-pagination-horizontal {
+    bottom: 40px; /* Position above the arrows */
+    top: auto;
+  }
+  
+  /* Style and position the navigation arrows */
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: auto;
+    bottom: -20px; /* Position below the progress bar */
+    color: #d4a556;
+  }
+
+  .swiper-button-prev {
+   left: auto;
+   right: 7%; /* Position below the progress bar */
+  }
+
+  .swiper-button-next {
+    right: 2%; /* Keep the right arrow's position */
+  }
+  
+  /* Adjust the controls container */
+  .swiper-controls {
+    position: relative;
+    height: 60px; /* Adjust based on your needs */
+  }
+  
+  /* Ensure navigation buttons are properly positioned */
+  .swiper-navigation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* Media query for smaller screens */
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    bottom: 1%; /* Adjust for smaller screens */
+  }
+
+  .swiper-button-prev {
+    right: 12%; /* Adjust spacing for smaller screens */
+  }
+
+  .swiper-button-next {
+    right: 2%;
+  }
+}
+   
+   
+   /* NEW ARIVALS SECTION --------------------------------------------> */
+   .new-arrivals {
+    padding: 6em 4%;
+    background-color: transparent;
+    justify-content: center;
+    display: flex;
+   }
+   
+   
+   
+   
+   /* NEWS SECTION --------------------------------------------> */
+   .news {
+    padding: 6em 4%;
+    background-color: transparent;
+    justify-content: center;
+    display: flex;
+   }
+   
+   
+   .photo-container {
+  position: relative;
+   }
+
+  .first-photo {
+    position: relative;
+    left: 0%;
+
+  }
+   
+   .second-photo {
+    position: absolute; 
+    top: 0;
+    right: 15%;
+    max-width: 60%;
+   }
+
+   .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+   }
+   .fade-in.visible {
+    opacity: 1;
+  }
+   
+   /* Make sure the footer has a relative position */
+/* .site-footer {
+  position: relative;
+  width: 100%;
+} */
+
+/* Style the background image for the footer */
+/* .site-footer section {
+  position: relative;
+} */
+
+/* .site-footer img {
+  width: 100%;  /* Ensures the image spans across the full width of the footer */
+  /* height: auto; Keep aspect ratio intact */
+  /* bottom: 0%; */ 
+
+/* } */
+/* -------------NEW FOOTER CODE---------------------------- */
+
+
+/* Style the navigation inside the footer */
+/* .site-footer .site-nav {
+  position: absolute;   /* Positioning the nav buttons over the footer */
+  /* bottom: 20px;         /* Adjust distance from the bottom of the footer */
+  /* left: 50%;            /* Center the navigation horizontally */ 
+  /* z-index: 10;          /* Ensures the buttons are above the image */
+  /* display: flex;
+  justify-content: center; */
+/* } */ 
+
+/* Style individual navigation links */
+/* .site-footer .site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between the links */
+  /* margin: 0;
+  padding: 0;
+} */ 
+
+/* .site-footer .site-nav a {
+  color: white; /* White color for visibility on a dark background */
+  /* text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s;
+} */
+
+/* .site-footer .site-nav a:hover {
+  color: #f1c40f; /* Change color on hover, example: golden yellow */
+/* } */ 
+
+.site-footer {
+  position: relative;
+  width: 100%;
+}
+
+.footer-content {
+  position: relative;
+  width: 100%;
+}
+
+.footer-background {
+  width: 100%;
+  display: block;
+}
+
+.home-button {
+  position: absolute;
+  right: 10%; /* Changed from 140px */
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.home-button img {
+  width: 70%; /* Keep this as a percentage */
+  height: auto;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.home-button:hover img {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .home-button {
+    right: 5%;
+    top: 70%;
+  }
+  
+  .home-button img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-button {
+    right: 3%;
+    top: 80%;
+  }
+  
+  .home-button img {
+    width: 50%;
+  }
+}
